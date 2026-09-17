@@ -5,7 +5,7 @@ import 'package:safe_rag/core/constants/app_styles.dart' show AppStyles;
 class AppTheme {
   static final ThemeData lightMode = ThemeData(
     useMaterial3: true,
-    scaffoldBackgroundColor: AppColors.primaryColor,
+    scaffoldBackgroundColor: AppColors.whiteColor,
 
     colorScheme: ColorScheme.light(
       primary: AppColors.blueColor,
@@ -43,7 +43,7 @@ class AppTheme {
       onSurface: AppColors.whiteColor,
     ),
 
-    appBarTheme:  AppBarTheme(color: AppColors.primaryColor),
+    appBarTheme: AppBarTheme(color: AppColors.primaryColor),
 
     textTheme: TextTheme(
       titleLarge: AppStyles.whiteBold24,

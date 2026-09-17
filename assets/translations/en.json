@@ -1,0 +1,9 @@
+{
+  "onboarding": {
+    "title1": "Personalize Your Experience",
+    "desc1": "Choose your preferred language and theme to get started with a setup that feels just right for you.",
+    "language": "Language",
+    "theme": "Theme",
+    "continue": "Continue"
+  }
+}
