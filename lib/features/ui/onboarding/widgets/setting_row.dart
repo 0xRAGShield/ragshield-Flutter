@@ -11,7 +11,7 @@ class SettingRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(label, style: AppStyles.lightGreyReg16),
+        Text(label, style: Theme.of(context).textTheme.titleMedium),
         const Spacer(),
         child,
       ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:safe_rag/core/constants/app_colors.dart';
 import 'package:safe_rag/core/state/theme_provider.dart';
@@ -23,12 +24,11 @@ class IconToggle extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Provider.of<ThemeProvider>(context);
     return Container(
-      padding: const EdgeInsets.all(4),
       decoration: BoxDecoration(
         color: theme.isDarkMode()
             ? AppColors.secondryColor
             : AppColors.labelColor,
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(16.r),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -69,8 +69,8 @@ class _Thumb extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 30,
-        height: 30,
+        width: 40.w,
+        height: 32.h,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           shape: BoxShape.circle,

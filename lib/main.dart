@@ -1,12 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:safe_rag/core/state/local_provider.dart';
 import 'package:safe_rag/core/state/theme_provider.dart';
 import 'package:safe_rag/core/theme/app_theme.dart';
-import 'package:safe_rag/features/ui/intro/pages/intro_screen_1.dart';
-import 'package:safe_rag/features/ui/intro/pages/intro_screen_2.dart';
-import 'package:safe_rag/features/ui/intro/pages/intro_screen_3.dart';
-import 'package:safe_rag/features/ui/intro/pages/intro_screen_4.dart';
+import 'package:safe_rag/features/ui/auth/pages/login_screen.dart';
+import 'package:safe_rag/features/ui/onboarding/pages/onboarding_screen.dart';
 
 import 'core/constants/app_routes.dart';
 
@@ -37,21 +36,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var themeProvider = Provider.of<ThemeProvider>(context);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.introScreen1,
-      routes: {
-        AppRoutes.introScreen1: (context) => IntroScreen1(),
-        AppRoutes.introScreen2: (context) => IntroScreen2(),
-        AppRoutes.introScreen3: (context) => IntroScreen3(),
-        AppRoutes.introScreen4: (context) => IntroScreen4(),
+    return ScreenUtilInit(
+      designSize: Size(390, 844),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      // Use builder only if you need to use library outside ScreenUtilInit context
+      builder: (_, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          initialRoute: AppRoutes.mainOnboarding,
+          routes: {
+            AppRoutes.mainOnboarding: (context) => OnboardingScreen(),
+            AppRoutes.loginScreen: (context) => LoginScreen(),
+          },
+          localizationsDelegates: context.localizationDelegates,
+          supportedLocales: context.supportedLocales,
+          locale: context.locale,
+          theme: AppTheme.lightMode,
+          darkTheme: AppTheme.darkMode,
+          themeMode: themeProvider.themeMode,
+        );
       },
-      localizationsDelegates: context.localizationDelegates,
-      supportedLocales: context.supportedLocales,
-      locale: context.locale,
-      theme: AppTheme.lightMode,
-      darkTheme: AppTheme.darkMode,
-      themeMode: themeProvider.themeMode,
     );
   }
 }

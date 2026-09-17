@@ -78,7 +78,7 @@ flutter_native_splash:
   # clip_horizontal, clip_vertical, end, fill, fill_horizontal, fill_vertical, left, right, start, top. could also be a combination like `android_gravity: fill|clip_vertical`
   # This will fill the width while maintaining the image's vertical aspect ratio.
   # visit https://developer.android.com/reference/android/view/Gravity
-  ios_content_mode: center      # scaleToFill, scaleAspectFit, scaleAspectFill, 
+  ios_content_mode: scaleAspectFit      # scaleToFill, scaleAspectFit, scaleAspectFill, 
   # center, top, bottom, left, right, topLeft, topRight, bottomLeft, or bottomRight.
   # visit https://developer.apple.com/documentation/uikit/uiview/contentmode
   #web_image_mode: center        # center, contain, stretch, cover

@@ -21,6 +21,7 @@ class AppTheme {
       headlineLarge: AppStyles.lightGreyReg16,
       headlineMedium: AppStyles.lightGreyReg12,
       headlineSmall: AppStyles.blueReg12,
+      bodyLarge: AppStyles.blackBold16,
     ),
 
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
@@ -52,6 +53,7 @@ class AppTheme {
       headlineLarge: AppStyles.lightGreyReg16,
       headlineMedium: AppStyles.lightGreyReg12,
       headlineSmall: AppStyles.blueReg12,
+      bodyLarge: AppStyles.whiteBold16,
     ),
 
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
