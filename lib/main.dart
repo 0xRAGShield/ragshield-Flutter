@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:safe_rag/core/state/local_provider.dart';
 import 'package:safe_rag/core/state/theme_provider.dart';
 import 'package:safe_rag/core/theme/app_theme.dart';
+import 'package:safe_rag/core/utils/onboarding_helper.dart';
 import 'package:safe_rag/features/ui/auth/pages/forget_password/forgot_password_screen.dart';
 import 'package:safe_rag/features/ui/auth/pages/login/login_screen.dart';
 import 'package:safe_rag/features/ui/home/home_screen.dart';
@@ -16,6 +17,7 @@ import 'package:provider/provider.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
+  final hasSeenOnboarding = await OnboardingHelper.hasSeenOnboarding();
   runApp(
     MultiProvider(
       providers: [
@@ -26,14 +28,16 @@ Future<void> main() async {
         supportedLocales: const [Locale('en'), Locale('ar')],
         path: 'assets/translations',
         fallbackLocale: Locale('en'),
-        child: MyApp(),
+        child: MyApp(hasSeenOnboarding: hasSeenOnboarding),
       ),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final bool hasSeenOnboarding;
+
+  const MyApp({super.key, required this.hasSeenOnboarding});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +49,9 @@ class MyApp extends StatelessWidget {
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: AppRoutes.mainOnboarding,
+          initialRoute: hasSeenOnboarding
+              ? AppRoutes.loginScreen
+              : AppRoutes.mainOnboarding,
           routes: {
             AppRoutes.mainOnboarding: (context) => OnboardingScreen(),
             AppRoutes.loginScreen: (context) => LoginScreen(),
