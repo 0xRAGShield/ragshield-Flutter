@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:safe_rag/core/widgets/custom_elevated_button.dart';
+import 'package:safe_rag/core/utils/custom_elevated_button.dart';
 
 class OnboardingScreen3 extends StatelessWidget {
   const OnboardingScreen3({super.key, required this.onContinue, this.onSkip});

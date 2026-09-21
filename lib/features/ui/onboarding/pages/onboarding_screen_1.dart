@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:safe_rag/core/state/local_provider.dart';
 import 'package:safe_rag/core/state/theme_provider.dart';
-import 'package:safe_rag/core/widgets/custom_elevated_button.dart';
+import 'package:safe_rag/core/utils/custom_elevated_button.dart';
 import 'package:safe_rag/features/ui/onboarding/widgets/icon_toggle.dart';
 import 'package:safe_rag/features/ui/onboarding/widgets/setting_row.dart';
 
