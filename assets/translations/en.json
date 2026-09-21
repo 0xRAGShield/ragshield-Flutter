@@ -1,0 +1,29 @@
+{
+  "onboarding": {
+    "title1": "Personalize Your Experience",
+    "desc1": "Choose your preferred language and theme to get started with a setup that feels just right for you.",
+    "title2": "Ask clinical questions in plain language",
+    "desc2": "Every question is screened before it reaches the model, and every answer is checked before it reaches you",
+    "title3": "Patient data never leaves protected",
+    "desc3": "Names, medical IDs and contact details are detected and masked before retrieval — and again before any answer is shown",
+    "title4": "Watched at every stage, continuously",
+    "desc4": "Eight checkpoints stand between a question and an answer. Security teams see all of them live; you just see the result",
+    "language": "Language",
+    "theme": "Theme",
+    "continue": "Continue",
+    "skip": "Skip"
+  },
+
+  "login" :{
+    "title": "Welcome back!",
+    "desc": "Sign in with your hospital credentials to reach the protected assistant",
+    "emailLabel": "Work email",
+    "emailHint": "name@hospital.com",
+    "passwordLabel": "Password",
+    "signInButton": "Sign in",
+    "forgotPassword": "Forgot password?",
+    "Trouble signing in?": "Trouble signing in?",
+    "Contact IT service desk": "Contact IT service desk",
+    "keepMeSignedIn": "Keep me signed in"
+}
+}
