@@ -55,7 +55,6 @@ class _Thumb extends StatelessWidget {
   const _Thumb({
     required this.selected,
     required this.icon,
-    //required this.size,
     required this.onTap,
   });
 

@@ -4,7 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:safe_rag/core/state/local_provider.dart';
 import 'package:safe_rag/core/state/theme_provider.dart';
 import 'package:safe_rag/core/theme/app_theme.dart';
-import 'package:safe_rag/features/ui/auth/pages/login_screen.dart';
+import 'package:safe_rag/features/ui/auth/pages/forget_password/forgot_password_screen.dart';
+import 'package:safe_rag/features/ui/auth/pages/login/login_screen.dart';
 import 'package:safe_rag/features/ui/onboarding/pages/onboarding_screen.dart';
 
 import 'core/constants/app_routes.dart';
@@ -40,7 +41,6 @@ class MyApp extends StatelessWidget {
       designSize: Size(390, 844),
       minTextAdapt: true,
       splitScreenMode: true,
-      // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -48,6 +48,7 @@ class MyApp extends StatelessWidget {
           routes: {
             AppRoutes.mainOnboarding: (context) => OnboardingScreen(),
             AppRoutes.loginScreen: (context) => LoginScreen(),
+            AppRoutes.forgetScreen: (context) => ForgotPasswordScreen(),
           },
           localizationsDelegates: context.localizationDelegates,
           supportedLocales: context.supportedLocales,
