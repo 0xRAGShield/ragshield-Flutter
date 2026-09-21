@@ -4,18 +4,31 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:safe_rag/core/state/local_provider.dart';
 import 'package:safe_rag/core/state/theme_provider.dart';
-import 'package:safe_rag/core/widgets/custom_elevated_button.dart';
+import 'package:safe_rag/core/utils/custom_elevated_button.dart';
 import 'package:safe_rag/features/ui/onboarding/widgets/icon_toggle.dart';
 import 'package:safe_rag/features/ui/onboarding/widgets/setting_row.dart';
 
-class OnboardingScreen1 extends StatelessWidget {
+class OnboardingScreen1 extends StatefulWidget {
   const OnboardingScreen1({super.key, required this.onContinue});
 
   final VoidCallback onContinue;
 
   @override
+  State<OnboardingScreen1> createState() => _OnboardingScreen1State();
+}
+
+class _OnboardingScreen1State extends State<OnboardingScreen1> {
+   late ThemeProvider themeProvider;
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_){
+      themeProvider.loadTheme();
+    });
+  }
+  @override
   Widget build(BuildContext context) {
-    var themeProvider = Provider.of<ThemeProvider>(context);
+    themeProvider = Provider.of<ThemeProvider>(context);
     var localProvider = Provider.of<LocalProvider>(context);
     return Scaffold(
       body: SafeArea(
@@ -62,7 +75,7 @@ class OnboardingScreen1 extends StatelessWidget {
               Spacer(),
               CustomElevatedButton(
                 text: 'Continue'.tr(),
-                onPressed: onContinue,
+                onPressed: widget.onContinue,
               ),
             ],
           ),

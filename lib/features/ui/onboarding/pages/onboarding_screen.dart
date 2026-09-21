@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:safe_rag/core/constants/app_routes.dart';
+import 'package:safe_rag/core/routing/app_routes.dart';
 
 import 'onboarding_screen_1.dart';
 import 'onboarding_screen_2.dart';
