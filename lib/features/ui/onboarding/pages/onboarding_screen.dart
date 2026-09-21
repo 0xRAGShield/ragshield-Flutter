@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:safe_rag/core/routing/app_routes.dart';
+import 'package:safe_rag/core/utils/onboarding_helper.dart';
 
 import 'onboarding_screen_1.dart';
 import 'onboarding_screen_2.dart';
@@ -23,7 +24,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-  void _skipToLogin() {
+  Future<void> finishOnboarding() async {
+    await OnboardingHelper.setOnboardingSeen();
+    if (!mounted) return;
     Navigator.pushReplacementNamed(context, AppRoutes.loginScreen);
   }
 
@@ -40,9 +43,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       physics: NeverScrollableScrollPhysics(),
       children: [
         OnboardingScreen1(onContinue: _next),
-        OnboardingScreen2(onContinue: _next, onSkip: _skipToLogin),
-        OnboardingScreen3(onContinue: _next, onSkip: _skipToLogin),
-        OnboardingScreen4(onContinue: _skipToLogin),
+        OnboardingScreen2(onContinue: _next, onSkip: finishOnboarding),
+        OnboardingScreen3(onContinue: _next, onSkip: finishOnboarding),
+        OnboardingScreen4(onContinue: finishOnboarding),
       ],
     );
   }
