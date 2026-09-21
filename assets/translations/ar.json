@@ -12,5 +12,17 @@
     "theme": "الثيم",
     "continue": "متابعة",
     "skip": "تخطي"
-  }
+  },
+  "login" :{
+  "title": "أهلاً بعودتك!",
+  "desc": "سجّل الدخول ببيانات اعتماد المستشفى للوصول إلى المساعد المحمي",
+  "emailLabel": "البريد الإلكتروني للعمل",
+  "emailHint": "name@hospital.com",
+  "passwordLabel": "كلمة المرور",
+  "signInButton": "تسجيل الدخول",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "Trouble signing in?": "تواجه مشكلة في تسجيل الدخول؟",
+  "Contact IT service desk": "تواصل مع فريق الدعم الفني",
+  "keepMeSignedIn": "إبقني مسجلاً للدخول"
+}
 }

@@ -43,7 +43,7 @@ class OnboardingScreen2 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.titleMedium,
               ),
-              SizedBox(height: 112.h),
+              SizedBox(height: 88.h),
               CustomElevatedButton(
                 onPressed: onContinue,
                 text: 'onboarding.continue'.tr(),

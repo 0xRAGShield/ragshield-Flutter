@@ -12,5 +12,18 @@
     "theme": "Theme",
     "continue": "Continue",
     "skip": "Skip"
-  }
+  },
+
+  "login" :{
+    "title": "Welcome back!",
+    "desc": "Sign in with your hospital credentials to reach the protected assistant",
+    "emailLabel": "Work email",
+    "emailHint": "name@hospital.com",
+    "passwordLabel": "Password",
+    "signInButton": "Sign in",
+    "forgotPassword": "Forgot password?",
+    "Trouble signing in?": "Trouble signing in?",
+    "Contact IT service desk": "Contact IT service desk",
+    "keepMeSignedIn": "Keep me signed in"
+}
 }
