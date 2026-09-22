@@ -29,6 +29,11 @@ class AppStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.lightGreyColor,
   );
+  static TextStyle lightGreyReg8 = GoogleFonts.inter(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w400,
+    color: AppColors.lightGreyColor,
+  );
   static TextStyle lightGreyBold16 = GoogleFonts.inter(
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,

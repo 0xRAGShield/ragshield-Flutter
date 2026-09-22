@@ -13,8 +13,7 @@
     "continue": "Continue",
     "skip": "Skip"
   },
-
-  "login" :{
+  "login": {
     "title": "Welcome back!",
     "desc": "Sign in with your hospital credentials to reach the protected assistant",
     "emailLabel": "Work email",
@@ -25,5 +24,30 @@
     "Trouble signing in?": "Trouble signing in?",
     "Contact IT service desk": "Contact IT service desk",
     "keepMeSignedIn": "Keep me signed in"
-}
+  },
+  "forgotPassword": {
+    "appBarTitle": "Forgot Password",
+    "title": "Forgot your password?",
+    "desc": "Please write your email to receive a confirmation code to set a new password",
+    "emailLabel": "Email",
+    "emailHint": "name@hospital.com",
+    "confirmMailButton": "Confirm Mail",
+    "verificationCode": "Verification Code",
+    "confirmCode": "Confirm Code",
+    "verifyEmailAddress": "Verify email address",
+    "verificationCodeSentTo": "Verification code sent to: {email}",
+    "resendConfirmationCode": "Resend Confirmation Code",
+    "otpIncomplete": "Please enter the complete verification code",
+    "verificationFailed": "Verification failed. Please try again.",
+    "codeResent": "A new verification code has been sent",
+    "resendFailed": "Could not resend the code. Please try again.",
+    "sendCodeFailed": "Could not send the verification code. Please try again."
+  },
+  "validation": {
+    "emailRequired": "Please Enter your Email",
+    "emailInvalid": "Please Enter valid Email",
+    "passwordRequired": "Please Enter Password",
+    "passwordInvalid": "Password must be at least 8 characters long",
+    "confirmPasswordRequired": "Please Enter Confirm Password"
+  }
 }
