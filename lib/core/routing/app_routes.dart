@@ -4,5 +4,4 @@ class AppRoutes {
   static const String loginScreen = '/login-screen';
   static const String forgetScreen = '/forget-screen';
   static const String homeScreen = '/home-screen';
-  static const String verifyEmailScreen = '/verify-email-screen';
 }

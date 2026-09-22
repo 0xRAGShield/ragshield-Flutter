@@ -6,6 +6,7 @@ import 'package:safe_rag/core/state/theme_provider.dart';
 import 'package:safe_rag/core/theme/app_theme.dart';
 import 'package:safe_rag/core/utils/onboarding_helper.dart';
 import 'package:safe_rag/features/ui/auth/pages/forget_password/forgot_password_screen.dart';
+import 'package:safe_rag/features/ui/auth/pages/forget_password/verify_email_screen.dart';
 import 'package:safe_rag/features/ui/auth/pages/login/login_screen.dart';
 import 'package:safe_rag/features/ui/home/home_screen.dart';
 import 'package:safe_rag/features/ui/onboarding/pages/onboarding_screen.dart';

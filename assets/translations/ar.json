@@ -40,14 +40,22 @@
     "otpIncomplete": "من فضلك أدخل رمز التحقق كاملاً",
     "verificationFailed": "فشل التحقق. حاول مرة أخرى.",
     "codeResent": "تم إرسال رمز تحقق جديد",
-    "resendFailed": "تعذر إعادة إرسال الرمز. حاول مرة أخرى.",
-    "sendCodeFailed": "تعذر إرسال رمز التحقق. حاول مرة أخرى."
+    "resendFailed": "تعذر إعادة إرسال الرمز. حاول مرة أخرى",
+    "sendCodeFailed": "تعذر إرسال رمز التحقق. حاول مرة أخرى",
+    "newPassword": "كلمة المرور الجديدة",
+    "newPasswordDesc": "يرجى كتابة كلمة المرور الجديدة",
+    "passwordLabel": "كلمة المرور",
+    "confirmPasswordLabel": "تأكيد كلمة المرور",
+    "updatePasswordButton": "تحديث كلمة المرور",
+    "updatedSuccessfully": "تم تحديث كلمة المرور بنجاح",
+    "passwordCreated": "تم إنشاء كلمة المرور الخاصة بك"
   },
   "validation": {
     "emailRequired": "من فضلك أدخل بريدك الإلكتروني",
     "emailInvalid": "من فضلك أدخل بريدًا إلكترونيًا صالحًا",
     "passwordRequired": "من فضلك أدخل كلمة المرور",
     "passwordInvalid": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+    "passwordsDoNotMatch": "كلمتا المرور غير متطابقتين",
     "confirmPasswordRequired": "من فضلك أدخل تأكيد كلمة المرور"
   }
 }

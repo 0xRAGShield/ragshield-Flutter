@@ -41,13 +41,20 @@
     "verificationFailed": "Verification failed. Please try again.",
     "codeResent": "A new verification code has been sent",
     "resendFailed": "Could not resend the code. Please try again.",
-    "sendCodeFailed": "Could not send the verification code. Please try again."
+    "sendCodeFailed": "Could not send the verification code. Please try again.",
+    "newPassword": "New Password",
+    "newPasswordDesc": "Please write your new password ",
+    "confirmPasswordLabel": "Confirm Password",
+    "updatePasswordButton": "Update Password",
+    "updatedSuccessfully": "Password updated successfully",
+    "passwordCreated": "Your password has been created"
   },
   "validation": {
     "emailRequired": "Please Enter your Email",
     "emailInvalid": "Please Enter valid Email",
     "passwordRequired": "Please Enter Password",
     "passwordInvalid": "Password must be at least 8 characters long",
+    "passwordsDoNotMatch": "Passwords do not match",
     "confirmPasswordRequired": "Please Enter Confirm Password"
   }
 }
