@@ -26,6 +26,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  @override
+  void dispose() {
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -104,8 +110,11 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                           activeColor: AppColors.blueColor,
                           checkColor: AppColors.whiteColor,
-                          side: const BorderSide(color: AppColors.lightGreyColor),
-                          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          side: const BorderSide(
+                            color: AppColors.lightGreyColor,
+                          ),
+                          materialTapTargetSize:
+                              MaterialTapTargetSize.shrinkWrap,
                           visualDensity: VisualDensity.compact,
                         ),
                       ),
@@ -132,7 +141,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       leftIcon: 'assets/icons/usa_icon.png',
                       rightIcon: 'assets/icons/eg_icon.png',
                       onLeft: () => localProvider.changeLanguage(context, 'en'),
-                      onRight: () => localProvider.changeLanguage(context, 'ar'),
+                      onRight: () =>
+                          localProvider.changeLanguage(context, 'ar'),
                     ),
                   ),
                 ],
