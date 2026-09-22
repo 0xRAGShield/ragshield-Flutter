@@ -97,6 +97,10 @@ class AppTheme {
         ),
       ),
     ],
+    dialogTheme: DialogThemeData(
+      backgroundColor: AppColors.primaryColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.r)),
+    ),
   );
 
   static final ThemeData darkMode = ThemeData(
@@ -191,5 +195,9 @@ class AppTheme {
         ),
       ),
     ],
+    dialogTheme: DialogThemeData(
+      backgroundColor: AppColors.whiteColor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.r)),
+    ),
   );
 }
